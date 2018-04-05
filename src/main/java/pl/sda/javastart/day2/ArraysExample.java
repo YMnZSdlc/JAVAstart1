@@ -8,18 +8,21 @@ public class ArraysExample {
     }
 
     private static void printNameWithComma() {
-        Scanner cin = new Scanner(System.in);
+        Scanner scanerName = new Scanner(System.in);
 
         String[] names = new String[5];
 
         int i = 0;
         do {
-            System.out.println("Podah kolejne imię: ");
-            String name = cin.nextLine();
+            System.out.println("Podaj kolejne imię: ");
+            String name = scanerName.nextLine();
             names[i] = name;
             i++;
         } while (i < 5);
-
-        //for (String name : names) System.out.print(name + (names.length - 1 < a ?));
+        int a = 0;
+        for (String mane : names) {
+            System.out.println(mane + (a < names.length - 1 ? ", " : ""));
+            a++;
+        }
     }
 }
