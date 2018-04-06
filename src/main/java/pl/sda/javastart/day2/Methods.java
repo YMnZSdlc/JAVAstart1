@@ -30,10 +30,10 @@ public class Methods {
         return a*0.0254;
     }
 
-/*
     public static int minutesToDateValue (int a){
-        int y;
-    }*/
+        int y=0;
+        return y;
+    }
 
     public static double bmi (double weight, double height){
         return weight/ Math.pow(height, 2);

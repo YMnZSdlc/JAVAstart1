@@ -10,9 +10,6 @@ public class Fors {
         contdown(20);
         countdownWithPlusPlus(20);
         System.out.println("printFew");
-
-
-
         naturalNumberDevidedByTwo(1, 10);
 //        System.out.println(printFewNaturalNumbersWithResultInString(2, 7, (x) -> (Math.pow((double) x, 3))));
 //        System.out.println(printFewNaturalNumbersWithResultInString(2, 7, (x) -> (Math.pow((double) x, 2))));
@@ -21,8 +18,8 @@ public class Fors {
     }
 
 
-    public static void countdownWithPlusPlus (int max){
-        for (int i=0; i<max; i++){
+    public static void countdownWithPlusPlus(int max) {
+        for (int i = 0; i < max; i++) {
             System.out.println("Do końca zostało " + (max - i));
         }
     }
@@ -32,24 +29,31 @@ public class Fors {
             System.out.println("Hello World ! " + i);
         }
         for (int i = 0; i < 10; i++) {
-            System.out.println("Hello World !! " + (i+1));
+            System.out.println("Hello World !! " + (i + 1));
         }
     }
 
     public static void printFewbaturalNumbersEvenWithStream(int min, int max) {
-        IntStream.range(min, max+1).filter(element -> element %2 ==0).forEach(e -> System.out.println(e));
+        IntStream.range(min, max + 1).filter(element -> element % 2 == 0).forEach(e -> System.out.println(e));
+        // dziwny sposób na wypisanie liczb do wyjaśnienia
     }
 
     public static void printFewbaturalNumbersEvenWithContinue(int min, int max) {
-        for (int i = min; i <=max ; i++) {
-            if (i % 2 !=0){
-                continue;
+        for (int i = min; i <= max; i++) {
+            if (i % 2 != 0) { //jeśli reszta z dzielenia przez 2 różna od zero to:
+                continue; //przechodzi dalej
             }
+            System.out.println(i);
         }
     }
 
+    public static void printFewNaturalNumbersEven(int min, int max) {
+        for (int i = min; i < max; i++) {
+            if (i % 2 == 0) System.out.println(i);
+        }
+    }
 
-    public static void printFewNaturalNumbers() {
+    public static void printFewNaturalNumbersScaner() {
 
         int a;
         int b;
@@ -66,7 +70,7 @@ public class Fors {
         }
     }
 
-    public static void printFewNaturalNumb (int min, int max) {
+    public static void printFewNaturalNumbers(int min, int max) {
         for (int i = min; i <= max; i++) {
             System.out.println(i);
         }
@@ -82,6 +86,12 @@ public class Fors {
         for (int i = start; i >= 0; i--) {
             System.out.println(i);
             if (i == 0) System.out.println("BOOM");
+        }
+    }
+
+    public static void contdownWithPlusPlus(int max) {
+        for (int i = 0; i < max; i++) {
+            System.out.println("Do końca zostało" + (max - i));
         }
     }
 
@@ -107,8 +117,14 @@ public class Fors {
         System.out.print("Wprowadź trzecią liczbę: ");
         c = in.nextInt();
         System.out.println("Liczb");
-
     }
 
-
+    //tzw ciekawostka
+    public static String printFewNaturalNumbersWithResultInString(int min, int max, Function<Double, Double> function) {
+        String result = "";
+        for (int i = min; i <= max; i++) {
+            result = result + function.apply((double) i) + " ";
+        }
+        return result;
+    }
 }
