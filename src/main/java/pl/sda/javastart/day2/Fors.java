@@ -127,4 +127,16 @@ public class Fors {
         }
         return result;
     }
+
+    public static void fibonaci(int numerOfElement) {
+        int element1 = 0;
+        int element2 = 0;
+        int sumOfElement;
+        for (int i = 1; i < numerOfElement; i++) {
+            System.out.println(element2);
+            sumOfElement = element1 + element2;
+            element1 = element2;
+            element2=sumOfElement;
+        }
+    }
 }
