@@ -3,6 +3,7 @@ package pl.sda.javastart.day3;
 import org.apache.commons.lang3.StringUtils;
 
 import java.time.LocalDateTime;
+import java.util.Arrays;
 
 public class Car {
     private String model;
@@ -15,13 +16,35 @@ public class Car {
     private String[] options;
     private int doorNumbers;
 
+    public Car() {
+    }
+
+    public Car(String manufacturer, String model) {
+        this.manufacturer = manufacturer;
+        this.model = model;
+    }
+
     public String getManufacuredAndModel() {
 //        return manufacturer + " " + model;
 
 //        return  manufacturer == null ? "" : manufacturer + " " + model == null ? "" : model;
 
-        return StringUtils.defaultIfBlank(manufacturer, "") + StringUtils.defaultString(model, "");
+        return StringUtils.defaultIfBlank(manufacturer, "") + " " + StringUtils.defaultString(model, "");
+    }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", manufacturer='" + manufacturer + '\'' +
+                ", colour='" + colour + '\'' +
+                ", basePrice=" + basePrice +
+                ", engineCapacity=" + engineCapacity +
+                ", hp=" + hp +
+                ", manufacturedDate=" + manufacturedDate +
+                ", options=" + Arrays.toString(options) +
+                ", doorNumbers=" + doorNumbers +
+                '}';
     }
 
     public String getModel() {
