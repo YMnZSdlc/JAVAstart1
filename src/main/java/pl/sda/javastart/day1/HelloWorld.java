@@ -8,10 +8,11 @@ import java.time.LocalTime;
 public class HelloWorld {
 
     public static void main(String[] srgs) {
-        //methodName();
-        //printTextPartOne();
-        //printTextPartTwo();
-        printTextPartThree();
+//        methodName();
+//        printTextPartOne();
+//        printTextPartTwo();
+//        printTextPartThree();
+        printLogicOperatorExampleFromPresentation();
     }
 
     public static void methodName() {
@@ -40,7 +41,7 @@ public class HelloWorld {
         int weight = 75;
         System.out.printf("Michał waży %d kilogramów\n", weight);
         float weight1 = 75.68f;
-        System.out.printf("Michał waży %.2f kilogramów", weight1);
+        System.out.printf("Michał waży %.1f kilogramów", weight1);
     }
 
     public static void printTextPartThree() {
@@ -58,5 +59,18 @@ public class HelloWorld {
         System.out.println("abc" == new String("abc"));
         System.out.println("abc".equals(new String("abc")));
         System.out.println((2 + 4) > (1 + 3));
+    }
+
+    public static void printLogicOperatorExampleFromPresentation() {
+        String aString = null;
+//        System.out.println(aString != null & aString.equals("lala"));
+        System.out.println(aString != null && aString.equals("lala"));
+//        System.out.println(aString == null | !aString.equals("lala"));
+        System.out.println(aString == null || !aString.equals("lala"));
+//        System.out.println(!aString.equals("lala"));
+//        System.out.println(aString.equals("lala"));
+        System.out.println(aString == null);
+        System.out.println(aString != null);
+
     }
 }
