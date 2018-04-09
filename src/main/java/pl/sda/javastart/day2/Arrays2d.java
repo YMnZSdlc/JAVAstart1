@@ -2,8 +2,13 @@ package pl.sda.javastart.day2;
 
 public class Arrays2d {
     public static void main(String[] args) {
-//        printGirid(4, 3);
+        printGirid(2, 7);
         fillWithNumbers2();
+
+        String[] take = {"Adam", "Mama", "Git"};
+        System.out.println(take[1]);
+        int[] takTwo = new int[5];
+        takTwo[2]=2;
     }
 
     public static void printGirid(int n, int m) {
@@ -31,7 +36,7 @@ public class Arrays2d {
                 if (i == j) {
                     ints[i][j] = i;
                 }
-                System.out.print(ints[i][j]+" ");
+                System.out.print(ints[i][j] + " ");
             }
             System.out.println();
         }
