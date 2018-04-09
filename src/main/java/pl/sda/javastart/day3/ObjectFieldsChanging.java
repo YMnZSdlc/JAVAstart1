@@ -7,9 +7,7 @@ public class ObjectFieldsChanging {
 
     }
 
-    private static String addUndercore (String text){
 
-    }
 
     private static void changingObjectInternalByReferences(){
         ExperminetalObject reference1 = new ExperminetalObject(123);
