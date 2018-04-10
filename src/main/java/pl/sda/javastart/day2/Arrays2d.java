@@ -9,6 +9,12 @@ public class Arrays2d {
         System.out.println(take[1]);
         int[] takTwo = new int[5];
         takTwo[2]=2;
+        Integer[][] takeThree ={{1,3,4},{5,6,2}};
+        int [][]takeFour = new int[2][3];
+        Integer[][]takeFive = new Integer[4][3];
+
+        int l = takeFive[1].length;
+        System.out.println(l);
     }
 
     public static void printGirid(int n, int m) {

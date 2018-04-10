@@ -6,17 +6,51 @@ import java.util.stream.IntStream;
 
 public class Fors {
     public static void main(String[] args) {
-        printFewNaturalNumbCubes(3, 7);
-        contdown(20);
-        countdownWithPlusPlus(20);
-        System.out.println("printFew");
-        naturalNumberDevidedByTwo(1, 10);
+//        printFewNaturalNumbCubes(3, 7);
+//        contdown(20);
+//        countdownWithPlusPlus(20);
+//        System.out.println("printFew");
+//        naturalNumberDevidedByTwo(1, 10);
 //        System.out.println(printFewNaturalNumbersWithResultInString(2, 7, (x) -> (Math.pow((double) x, 3))));
 //        System.out.println(printFewNaturalNumbersWithResultInString(2, 7, (x) -> (Math.pow((double) x, 2))));
 //        printFewNaturalNumbersWithTheirCubes(2, 7);
+        exerciseFor(5);
+        exerciseWhile(6);
+        exerciseDoWhile(7);
 
     }
 
+    public static void exerciseFor(int n) {
+        for (int i = 0; i < n; i++) {
+            System.out.println("Ćwiczenie pętli \"for\". To jest pętla " + (i+1) + " z " + n);
+        }
+        System.out.println("Koniec pętli");
+    }
+
+    public static void exerciseWhile(int n) {
+        int i=0;
+        while (i<n){
+            i++;
+            System.out.println("Ćwiczenie pętli \"while\". To jest pętla " + i + " z " + n);
+        }
+        System.out.println("Koniec pętli");
+    }
+
+    public static void exerciseDoWhile(int n) {
+        int counter=0;
+        do {
+
+            counter++;
+//            if(counter<4)continue;
+            System.out.println("Ćwiczenie pętli \"while\". To jest pętla " + counter + " z " + n);
+        }
+        while (counter<n);
+        System.out.println("Koniec pętli");
+    }
+
+    public static void exerciseForEach() {
+
+    }
 
     public static void countdownWithPlusPlus(int max) {
         for (int i = 0; i < max; i++) {
@@ -136,7 +170,7 @@ public class Fors {
             System.out.println(element2);
             sumOfElement = element1 + element2;
             element1 = element2;
-            element2=sumOfElement;
+            element2 = sumOfElement;
         }
 
 
