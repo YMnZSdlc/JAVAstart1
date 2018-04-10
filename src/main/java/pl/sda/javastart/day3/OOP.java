@@ -8,6 +8,10 @@ public class OOP {
 
     }
 
+    private static void finalExamples(){
+
+    }
+
     private static void referencesExample() {
         String text1 = "napis";
         String text2 = "napis";
