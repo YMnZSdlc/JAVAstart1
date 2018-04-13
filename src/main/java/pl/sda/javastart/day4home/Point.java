@@ -4,7 +4,7 @@ public class Point {
     private double xPoint;
     private double yPoint;
 
-    public Point(double xPoint, double yPoint) {
+    public Point() {
         this.xPoint = xPoint;
         this.yPoint = yPoint;
     }
@@ -23,5 +23,13 @@ public class Point {
 
     public void setyPoint(double yPoint) {
         this.yPoint = yPoint;
+    }
+
+    @Override
+    public String toString() {
+        return "Point{" +
+                "xPoint=" + xPoint +
+                ", yPoint=" + yPoint +
+                '}';
     }
 }
