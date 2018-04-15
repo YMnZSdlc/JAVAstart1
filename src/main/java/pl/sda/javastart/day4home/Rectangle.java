@@ -47,6 +47,7 @@ public class Rectangle extends Figure {
 
     @Override
     Point[] getEdges(){
+
         return new Point[0];
     }
 

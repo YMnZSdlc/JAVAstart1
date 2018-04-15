@@ -4,9 +4,24 @@ public class Point {
     private double xPoint;
     private double yPoint;
 
-    public Point() {
-        this.xPoint = xPoint;
-        this.yPoint = yPoint;
+    public Point(double xP, double yP) {
+        this.xPoint = xP;
+        this.yPoint = yP;
+    }
+
+    public double calculateDisttance(Point otherPoint) {
+        double partialResult = (xPoint - otherPoint.xPoint)*(xPoint - otherPoint.xPoint)+
+                (yPoint - otherPoint.yPoint)*(yPoint - otherPoint.yPoint);
+        partialResult = Math.sqrt(partialResult);
+        return partialResult;
+    }
+
+    @Override
+    public String toString() {
+        return "Point{" +
+                "xPoint=" + xPoint +
+                ", yPoint=" + yPoint +
+                '}';
     }
 
     public double getxPoint() {
@@ -25,11 +40,5 @@ public class Point {
         this.yPoint = yPoint;
     }
 
-    @Override
-    public String toString() {
-        return "Point{" +
-                "xPoint=" + xPoint +
-                ", yPoint=" + yPoint +
-                '}';
-    }
+
 }
