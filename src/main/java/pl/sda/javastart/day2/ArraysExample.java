@@ -3,8 +3,6 @@ package pl.sda.javastart.day2;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
-
 public class ArraysExample {
     public static void main(String[] args) {
 //        printNameWithComma();
@@ -37,7 +35,6 @@ public class ArraysExample {
 
     public static void printEmptyArray(int arraySize, int elements) {
         int[] arrays = new int[arraySize < elements ? elements : arraySize];
-
         for (int i = 0; i < elements; i++) {
             arrays[i] = 7;
         }
@@ -49,16 +46,13 @@ public class ArraysExample {
 
     public static void sumElementsInArray(int[] array) {
         int sumOfArrayElements = 0;
-
 //        for (int i=0; i<array.length;i++) {
 //            sumOfArrayElements += array[i];
 //        }
-
         for (int element : array) {
             sumOfArrayElements += element;
         }
         System.out.println(sumOfArrayElements);
-
         int sum = Arrays.stream(array).sum();
         System.out.println(sum);
 

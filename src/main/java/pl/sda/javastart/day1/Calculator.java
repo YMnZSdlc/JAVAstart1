@@ -33,7 +33,13 @@ public class Calculator {
         System.out.printf("Square: %6.2f\n", Math.pow(a, b));
         System.out.printf("Cube  : %6.2f\n", Math.pow(a, 3));
         System.out.printf("4 pow : %6.2f\n", Math.pow(a, 4));
+
     }
+
+    public int add(int a, int b) {
+        return a + b;
+    }
+
 
     public static int adder(int a, int secondValue) {
         int result = a + secondValue;
