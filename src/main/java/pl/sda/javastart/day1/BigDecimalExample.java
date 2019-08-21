@@ -10,11 +10,11 @@ public class BigDecimalExample {
 
         System.out.println("Odejmowanie bez Big Decimal 0,02-0,03= " + z);
 
-
         BigDecimal a = new BigDecimal("0.02");
         BigDecimal b = new BigDecimal("0.03");
+        BigDecimal c = new BigDecimal("0.07");
 
-        a=a.subtract(b);
+        a = a.subtract(b);
         System.out.println("Odejmowanie z Big Decimal 0,02-0,03= " + a);
     }
 }

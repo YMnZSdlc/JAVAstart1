@@ -23,14 +23,17 @@ public class CatsMain {
         Cat firstCat = new Cat();
         Cat secondCat = new Cat();
         Cat thirdCat = new Cat();
+        Cat forthCat = new Cat();
 
-        firstCat.setName("Mruczek");
+        firstCat.setName("HUI");
         secondCat.setName("Miau");
+        thirdCat.setName("kici");
 
-        Cat[] cats = new Cat[3];
+        Cat[] cats = new Cat[4];
         cats[0] = firstCat;
         cats[1] = secondCat;
         cats[2] = thirdCat;
+        cats[3] = forthCat;
 
         for (Cat kitty : cats) {
             System.out.println(kitty.getName());

@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        Scanner oneScanner = new Scanner(System.in);
+        Scanner oneScan = new Scanner(System.in);
         System.out.println("Wprowadz pierwszą liczbę:");
-        double a = oneScanner.nextDouble();
+        double a = oneScan.nextDouble();
         System.out.println("Wprowadz drugą liczbę:");
-        double b = oneScanner.nextDouble();
+        double b = oneScan.nextDouble();
 
         double result = adder(a, b);
-        System.out.println(result + " " + (a - b));
+        System.out.println("a = b = " + result + " a - b =  " + (a - b));
 
         System.out.println("a + b = " + (a + b)); //użycie bez metody
         System.out.println("a + b = " + adder(a, b));//użycie metody
