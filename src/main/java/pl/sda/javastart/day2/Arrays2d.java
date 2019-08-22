@@ -4,7 +4,10 @@ public class Arrays2d {
     public static void main(String[] args) {
         printGirid(4, 5);
         fillWithNumbers2();
+        printNamesFromArray();
+    }
 
+    private static void printNamesFromArray() {
         String[] take = {"Adam", "Mama", "Git"};
         System.out.println(take[1]);
         int[] takeTwo = new int[5];
@@ -26,12 +29,12 @@ public class Arrays2d {
             System.out.println();
         }
 
-//        for (int i:array[0]){
-//            for (int j:array[i]) {
-//                System.out.print(array[i][j]+" ");
-//            }
-//            System.out.println();
-//        }
+        for (int i:array[0]){
+            for (int j:array[i]) {
+                System.out.print(array[i][j]+" ");
+            }
+            System.out.println();
+        }
 
     }
 

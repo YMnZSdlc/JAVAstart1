@@ -11,7 +11,7 @@ public class Calc {
         double b = oneScanner.nextDouble();
 
         System.out.println("" + a + " + " + b + " = " + addDouble(a, b));
-        System.out.println("" + a + " - " + b + " = " + subtruc(a, b));
+        System.out.println("" + a + " - " + b + " = " + subtract(a, b));
         System.out.println("" + a + " * " + b + " = " + multiplier(a, b));
         System.out.println("" + a + " / " + b + " = " + (a / b));
         System.out.println("" + a + " % " + b + " = " + (a % b));
@@ -35,7 +35,7 @@ public class Calc {
         return a * b;
     }
 
-    public static double subtruc(double a, double b) {
+    public static double subtract(double a, double b) {
         return a - b;
     }
 }

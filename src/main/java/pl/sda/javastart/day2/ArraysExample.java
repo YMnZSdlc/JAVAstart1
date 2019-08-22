@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class ArraysExample {
     public static void main(String[] args) {
 //        printNameWithComma();
-//        sumElementsOfArray();
-        printNumberInTowerRows(5);
+        sumElementsOfArray();
+//        printNumberInTowerRows(5);
 //        printEmptyArray(3, 5);
-        sumElementsInArray(new int[]{1, 2, 3});
+//        sumElementsInArray(new int[]{1, 2, 3});
     }
 
     //public boolean compareArray
@@ -17,18 +17,26 @@ public class ArraysExample {
 
 
     private static void printNameWithComma() {
-        Scanner scanerName = new Scanner(System.in);
-        String[] names = new String[5];
+        Scanner scannerName = new Scanner(System.in);
+        System.out.println("Ile imion chcesz wpisać: ");
+        int count = Integer.parseInt(scannerName.nextLine());
+
+        String[] names = new String[count];
+
+        scanAndPrintNames(scannerName, count, names);
+    }
+
+    private static void scanAndPrintNames(Scanner scannerName, int count, String[] names) {
         int i = 0;
         do {
             System.out.println("Podaj kolejne imię: ");
-            String name = scanerName.nextLine();
+            String name = scannerName.nextLine();
             names[i] = name;
             i++;
-        } while (i < 5);
+        } while (i < count);
         int a = 0;
-        for (String mane : names) {
-            System.out.println(mane + (a < names.length - 1 ? ", " : ""));
+        for (String name : names) {
+            System.out.print(name + (a < names.length - 1 ? ", " : "."));
             a++;
         }
     }

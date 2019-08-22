@@ -14,8 +14,8 @@ public class Whiles {
         double howManyTimes = skaner.nextDouble();
 
         int i = 0;
-        while (i < howManyTimes){
-            System.out.println("Cześć. Tu pętla"+ i);
+        while (i < howManyTimes) {
+            System.out.println("Cześć. Tu pętla " + i);
             i++;
         }
     }
@@ -27,7 +27,7 @@ public class Whiles {
 
         int i = 0;
         do {
-            System.out.println("Cześć. Tu pętla" + i);
+            System.out.println("Cześć. Tu pętla " + i);
             i++;
         }
         while (i < howManyTimes);

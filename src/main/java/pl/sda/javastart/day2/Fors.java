@@ -6,13 +6,13 @@ import java.util.stream.IntStream;
 
 public class Fors {
     public static void main(String[] args) {
-//        printFewNaturalNumbCubes(3, 7);
-//        contdown(20);
-//        countdownWithPlusPlus(20);
-//        System.out.println("printFew");
-//        naturalNumberDevidedByTwo(1, 10);
-//        System.out.println(printFewNaturalNumbersWithResultInString(2, 7, (x) -> (Math.pow((double) x, 3))));
-//        System.out.println(printFewNaturalNumbersWithResultInString(2, 7, (x) -> (Math.pow((double) x, 2))));
+        printFewNaturalNumbCubes(3, 7);
+        contdown(20);
+        countdownWithPlusPlus(20);
+        System.out.println("printFew");
+        naturalNumberDevidedByTwo(1, 10);
+        System.out.println(printFewNaturalNumbersWithResultInString(2, 7, (x) -> (Math.pow((double) x, 3))));
+        System.out.println(printFewNaturalNumbersWithResultInString(2, 7, (x) -> (Math.pow((double) x, 2))));
 //        printFewNaturalNumbersWithTheirCubes(2, 7);
         exerciseFor(5);
         exerciseWhile(6);

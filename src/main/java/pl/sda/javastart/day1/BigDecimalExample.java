@@ -16,5 +16,8 @@ public class BigDecimalExample {
 
         a = a.subtract(b);
         System.out.println("Odejmowanie z Big Decimal 0,02-0,03= " + a);
+        c = c.subtract(a);
+
+        System.out.println("Dodatkowy gówno przykład na 0,07+0,01=" + c);
     }
 }

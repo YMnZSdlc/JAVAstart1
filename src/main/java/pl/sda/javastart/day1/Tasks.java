@@ -7,7 +7,7 @@ public class Tasks {
         int a = 9;
         int b = 5;
         int c = 3;
-        int wynik=a%b%c;
+        int wynik = a % b % c;
         System.out.println("Reszta z dzielenia: " + wynik);
 
         LocalDateTime teraz = LocalDateTime.now();
@@ -16,18 +16,21 @@ public class Tasks {
         int year = teraz.getYear();
         int month = teraz.getMonthValue();
         int day = teraz.getDayOfMonth();
+        String className = teraz.getClass().getSimpleName();
 
-        String monthValue = month < 10 ? "0" + month: "" + month;
+        String monthValue = month < 10 ? "0" + month : "" + month;
 
-        System.out.println(hour+":"+minute+" "+day+"."+monthValue+"."+year);
-        int minAftMid = hour*60+minute;
-        System.out.println("Od północy mineło: "+ minAftMid);
+        System.out.println(hour + ":" + minute + " " + day + "." + monthValue + "." + year);
+        int minAftMid = hour * 60 + minute;
+        System.out.println("Od północy mineło: " + minAftMid);
 
-        int perOfDay = 100*minAftMid/1440;
-        System.out.println("Mneło: "+perOfDay+"% doby");
+        int perOfDay = 100 * minAftMid / 1440;
+        System.out.println("Mneło: " + perOfDay + "% doby");
 
         int era = 24 * 60;
-        System.out.println("Do końca doby pozosyało: "+(era - minAftMid));
+        System.out.println("Do końca doby pozosyało: " + (era - minAftMid));
+
+        System.out.println("Nazwa klasy: " + className.toUpperCase());
 
     }
 }
