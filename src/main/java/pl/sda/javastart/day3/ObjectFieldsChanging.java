@@ -2,7 +2,7 @@ package pl.sda.javastart.day3;
 
 public class ObjectFieldsChanging {
     public static void main(String[] args) {
-//        simpleReferences();
+        simpleReferences();
         changingObjectInternalByReferences();
 
     }

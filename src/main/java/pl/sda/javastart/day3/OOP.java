@@ -2,8 +2,8 @@ package pl.sda.javastart.day3;
 
 public class OOP {
     public static void main(String[] args) {
-//        cars();
-        referencesExample();
+        cars();
+//        referencesExample();
 
 
     }
@@ -68,5 +68,7 @@ public class OOP {
         myFirstCar.setOptions(options);
         myFirstCar.setColour("White");
         System.out.println(myFirstCar);
+        System.out.println(car);
+        System.out.println(audi);
     }
 }
